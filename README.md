@@ -22,4 +22,4 @@ $ php artisan serve
 
 ## Development process
 
-The development process was done using the [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). The main branch is `main` and the development branch is `develop`. The features are developed in branches named `feat/<feature-name>` and the hotfixes are developed in branches named `hotfix/<hotfix-name>`. The features and hotfixes are merged into `develop` and the `develop` branch is merged into `main` when a release is made.
+The development process was done using a simplified version of [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). The main branch is `main`. The features are developed in branches named `feat/<feature-name>` and the hotfixes are developed in branches named `hotfix/<hotfix-name>`. The features and hotfixes are merged into `main` when a release is made, since this is just a demo project. In a real project, the features and hotfixes would be merged into `develop` and the `main` branch would be used only for releases.
