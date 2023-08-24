@@ -15,10 +15,6 @@ use App\Http\Controllers\Auth\LoginController;
 |
 */
 
-// Route::post('register', function(){
-//     return 'register';
-// });
-
 Route::post('register', [RegisterController::class, 'register']);
 Route::post('login', [LoginController::class, 'login']);
 
