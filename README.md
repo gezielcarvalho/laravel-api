@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a REST API developed with Laravel 10 and PHP 8. It is a simple API that allows you to create, read, update and delete users and their addresses. The authentication is done with JWT over a Bearer token. All the authentication and authorization is done with the extension [Laravel Passport](https://laravel.com/docs/8.x/passport). The endpoints are protected with the middleware `auth:api` and the routes are protected with the middleware `auth` and `verified`. The API is documented with Swagger and the documentation can be found at the endpoint `/api/documentation`.
+This is a REST API developed with Laravel 10 and PHP 8. It is a simple API that allows you to register and login a user. The authentication is done with JWT over a Bearer token. All the authentication and authorization is done with the extension [Laravel Passport](https://laravel.com/docs/8.x/passport). The endpoints are protected with the middleware `auth:api` and the routes are protected with the middleware `auth` and `verified`. The API is documented with Swagger and the documentation can be found at the endpoint `/api/documentation`.
 
 ## Installation
 
@@ -18,6 +18,7 @@ $ cp .env.example .env # Edit the .env file with your database credentials
 $ php artisan migrate
 $ php artisan db:seed
 $ php artisan passport:install
+$ php artisan l5-swagger:generate
 $ php artisan serve
 ```
 
